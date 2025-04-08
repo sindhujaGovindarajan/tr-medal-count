@@ -23,8 +23,8 @@
 
 ## How (Olympic) Medal Count Mini App looks?
 
-You land here: ![image](https://github.com/user-attachments/assets/585b02e1-5b92-4d5a-a759-5110cfbd14eb) with gold sort defaulted.
-Possible Error look: ![image](https://github.com/user-attachments/assets/7e4f0a93-0394-420b-87fe-a127339a3995)
+- You land here: ![image](https://github.com/user-attachments/assets/585b02e1-5b92-4d5a-a759-5110cfbd14eb) with gold sort defaulted.
+- Possible Error look: ![image](https://github.com/user-attachments/assets/7e4f0a93-0394-420b-87fe-a127339a3995)
 
 ## Running the Application
 
