@@ -1,9 +1,3 @@
-/app
-/eslint.config.mjs
-/next-env.d.ts
-/next.config.ts
-/package.json
 /pnpm-lock.yaml
-/postcss.config.mjs
-/public
-/tailwind.config.ts
+node_modules
+package-lock.json
