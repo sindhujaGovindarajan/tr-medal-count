@@ -1,15 +1,26 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { MedalData, MedalDataWithTotal } from "../types/medals";
 
 /**
- * Custom hook to fetch medal data and handle loading/error
+ * Custom hook to fetch medal data and handle loading/error states
  */
 export const useMedalData = () => {
   const [data, setData] = useState<MedalDataWithTotal[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
 
+  // Check if we're on the client side
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Only fetch data on the client side
+  useEffect(() => {
+    if (!isClient) return;
+
     const fetchMedalData = async () => {
       try {
         const response = await fetch("/api/medals");
@@ -39,7 +50,7 @@ export const useMedalData = () => {
     };
 
     fetchMedalData();
-  }, []);
+  }, [isClient]);
 
   return { data, isLoading, error };
 };
